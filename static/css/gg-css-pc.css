@@ -1,0 +1,102 @@
+ .gg-box {
+     position: relative;
+     cursor: pointer;
+ }
+
+ .gg-box-rla {
+     position: relative;
+ }
+
+ .gg-box .gg-close {
+     position: absolute;
+     border-radius: 2px;
+     width: 16px;
+     height: 16px;
+     background-image: url('../images/gg_close_w.png');
+     background-repeat: no-repeat;
+     background-size: 10px 10px;
+     background-position: center center;
+     z-index: 10001;
+     cursor: pointer;
+ }
+
+ .gg-close-bg {
+     background-color: rgba(0, 0, 0, 0.3);
+ }
+
+ .gg-box .gg-text,
+ .gg-box .gg-time {
+     position: absolute;
+     color: #999;
+     border-radius: 4px;
+     width: 35px;
+     height: 16px;
+     text-align: center;
+     line-height: 16px;
+     font-size: 12px;
+     z-index: 10001;
+ }
+
+ .gg-box .gg-time {
+     top: 6px;
+     right: 38px;
+     width: 80px;
+     height: 26px;
+     line-height: 26px;
+     font-size: 14px;
+ }
+
+ .gg-box .gg-time .gg-time-num {
+     color: #FF1313;
+ }
+
+ .gg-box .gg-close1 {
+     left: 0;
+     bottom: 0;
+ }
+
+
+
+ .gg-box .gg-text1 {
+     right: 0;
+     bottom: 0;
+ }
+
+ .gg-box .gg-close2 {
+     top: 6px;
+     right: 6px;
+ }
+
+
+
+ .gg-box .gg-text2 {
+     left: 1px;
+     bottom: 1px;
+ }
+
+ /* 单图/轮播样式 */
+ .gg-plates {
+     width: 100%;
+     margin: 0 auto;
+     overflow: hidden;
+     position: relative;
+ }
+
+ .gg-plates a,
+ .gg-plates img {
+     display: block;
+     /* width: 100%; */
+     overflow: hidden;
+ }
+
+
+ .gg-plates-swiper {
+     position: relative;
+ }
+
+ .gg-plates-swiper .gg-plates-swiper-pagination {
+     position: absolute;
+     bottom: 0;
+     text-align: center;
+     z-index: 1;
+ }

@@ -1,0 +1,212 @@
+/* ================ 多语言 s ================ */
+.current_box {
+    float: right;
+    line-height: 28px;
+    padding: 0 10px;
+    color: #6f6f6f;
+    position: relative;
+    border: 1px solid #E7E7E7;
+    /* display: inline-block; */
+    margin: 25px 40px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.current_lang {
+    min-width: 65px;
+    cursor: pointer;
+    position: relative;
+    color: #fff;
+}
+
+.current_lang::after {
+    content: " ";
+    position: absolute;
+    right: -6px;
+    top: 12px;
+    opacity: .4;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #000;
+}
+
+.current_lang:hover::after {
+    transform: rotate(180deg);
+}
+
+.menu_list {
+    position: absolute;
+    display: none;
+    background: #285A8F;
+    /* bottom: 40px; */
+    -webkit-filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.15));
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.15));
+    left: 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    z-index: 999999;
+}
+
+.menu_body {
+    display: block;
+    overflow: hidden;
+    padding: 5px 0;
+}
+
+.menu_body ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 8px 0;
+    overflow-y: auto;
+}
+
+.menu_body ul li {
+    width: 100%;
+}
+
+.menu_body a {
+    /* width: 100%; */
+    display: block;
+    white-space: nowrap;
+    background: none;
+    padding: 5px;
+    height: auto;
+    line-height: 26px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+/* ================ 多语言 e ================ */
+
+/* ================ 搜索 s  ================ */
+/* 定位导航栏 */
+.nav {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 88888;
+    width: 100%;
+}
+
+.game-recom {
+    margin-top: 80px;
+}
+
+/* 顶部搜索框 */
+.search-box {
+    float: right;
+    position: relative;
+}
+
+.form-control {
+    box-sizing: border-box;
+    height: 34px;
+    padding: 6px 12px;
+    padding-right: 30px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.form-control:focus {
+    border-color: #285A8F;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(234, 64, 50, 0.6);
+}
+
+
+.search-button {
+    position: absolute;
+    background: url(../images/serach.png) no-repeat center;
+    background-size: 21px 22px;
+    top: 24px;
+    right: 0;
+    border: none;
+    height: 33px;
+    width: 37px;
+}
+
+
+/* 回到顶部 */
+#back-to-top {
+    /* display: none; */
+    opacity: 0;
+    /* 初始状态不显示 */
+    position: fixed;
+    bottom: 190px;
+    right: 90px;
+    z-index: 9999;
+    font-size: 24px;
+    color: #fff;
+    background-color: #b1b2b2;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    transition: opacity ease-in-out .35s
+}
+
+#back-to-top:hover {
+    background-color: #616161;
+}
+
+#back-to-top img {
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+}
+
+#back-to-top i {
+    margin-top: 13px;
+}
+
+/* 当页面滚动超过一定距离时，显示回到顶部标签 */
+@media screen and (min-width: 768px) {
+    #back-to-top.show {
+        /* display: block; */
+        opacity: 1;
+    }
+}
+
+/* 页面缩放排版变化 */
+.home-app-list li {
+    padding: 16px 40px 16px 24px;
+}
+
+.home-heji ul {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.home-heji ul li {
+    box-sizing: border-box;
+    float: left;
+    width: 24%;
+    background: #fff;
+    border: 1px solid #efefef;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-right: 1%;
+    margin-bottom: 16px;
+    transition: all .2s linear;
+}
+
+/* ================ 搜索 e ================ */
