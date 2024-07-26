@@ -1328,8 +1328,7 @@
     background: #c376ef;
 }
 
-.game_information .btn a,
-.game_information .btn span {
+.game_information .btn>a {
     display: inline-block;
     /* width: 176px; */
     height: 50px;
@@ -1339,7 +1338,7 @@
     padding-left: 25px;
 }
 
-.game_information .btn a {
+.game_information .btn>a {
     color: #fff;
     font-size: 16px;
     border-radius: 4px;
@@ -1354,7 +1353,7 @@
     top: 9px;
 }
 
-.detail-btn{
+.detail-btn {
     display: flex;
 }
 

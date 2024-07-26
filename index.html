@@ -8,10 +8,12 @@
     <meta name="keywords" content="Free Download Skins for Roblox APK for Android" />
     <meta name="description" content="Skins for Roblox is your ultimate resource for accessing high-quality skins and promo codes tailored for Roblox players. With a user-friendly interface and a vast selection sourced directly from Roblox's generator, it offers quick and easy installation of skins to personalize your gaming avatar. Discover exclusive skins and stay updated with regular additions, enhancing your Roblox experience with style and ease." />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta property="og:site_name" content="40407.com" />
-    <meta property="og:title" content="Free Download Skins for Roblox APK for Android - 40407" />
-    <meta property="og:url" content="https://www.40407.com/en/games/88888" />
+    <meta property="og:site_name" content="APKPure.com" />
+    <meta property="og:title" content="WhatsApp Business APK for Android Download" />
+    <meta property="og:description" content="A free messaging app for everybody" />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://apkpure.com/whatsapp-business/com.whatsapp.w4b" />
+    <meta property="og:image" content="https://img.gamespot.com.cn/test1.jpg" />
     <meta name="renderer" content="webkit" />
     <link rel="canonical" href="https://www.40407.com/en/games/88888" />
     <link rel="alternate" href="https://www.40407.com/en/games/88888" hreflang="en" />
@@ -118,6 +120,260 @@
     <!-- 图片点击展示js -->
     <script type="text/javascript" src="static/js/jquery.fancybox.min.js"></script>
   </head>
+  <style>
+    .share-item {
+      position: relative;
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+      flex: 0 0 auto;
+      padding: 3px;
+    }
+
+    .share-item > span {
+      display: block;
+      width: 32px;
+      height: 32px;
+      cursor: pointer;
+      -webkit-box-sizing: content-box;
+      box-sizing: content-box;
+      border-radius: 6px;
+    }
+
+    .share-item > span.icon-link {
+      background-image: url(/static/images/icon-51t.svg);
+      background-repeat: no-repeat;
+      background-size: 180px auto;
+      background-position: -112px -108px;
+      margin-top: 4px;
+    }
+
+    .share-item {
+      margin-left: 8px;
+    }
+
+    .share-item:active,
+    .share-item:hover {
+      background-color: rgba(63, 188, 106, 0.1);
+      border-radius: 4px;
+    }
+
+    .share-item:active .icon-code,
+    .share-item:hover .icon-code {
+      background-position: -148px -72px;
+    }
+
+    .share-item:active .icon-link,
+    .share-item:hover .icon-link {
+      background-position: -148px -108px;
+    }
+
+    .share-pop {
+      position: absolute;
+      z-index: 50;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      display: none;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      background-color: #fff;
+      -webkit-box-shadow: 10px 10px 32px rgba(153, 153, 153, 0.2);
+      box-shadow: 10px 10px 32px rgba(153, 153, 153, 0.2);
+      padding: 12px;
+      border-radius: 4px;
+    }
+
+    .share-pop .pop-close {
+      position: absolute;
+      top: 14px;
+      right: 12px;
+      display: block;
+      cursor: pointer;
+      width: 24px;
+      height: 24px;
+      background-image: url(/static/images/icon-51t.svg);
+      background-repeat: no-repeat;
+      background-size: 180px auto;
+      background-position: -48px -72px;
+    }
+
+    .share-pop .pop-close:active,
+    .share-pop .pop-close:hover {
+      background-position: -76px -72px;
+    }
+
+    .share-pop .pop-title {
+      margin: 2px 40px 6px 40px;
+      color: #222;
+      text-align: center;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    .share-pop .pop-code {
+      border: 1px solid #e8eaed;
+    }
+
+    .share-pop .pop-code img {
+      display: block;
+      width: 160px;
+    }
+
+    .share-pop .pop-shareApp {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin: 10px auto 16px auto;
+    }
+
+    .share-pop .pop-shareApp > a {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+      flex: 0 0 auto;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      color: #222;
+      text-align: center;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 1;
+    }
+
+    .share-pop .pop-shareApp > a > span {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+      flex: 0 0 auto;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin: 0 12px 4px;
+      background-image: url(/static/images/icon-share.svg);
+      background-repeat: no-repeat;
+      background-size: auto 50px;
+    }
+
+    .share-pop .pop-shareApp > a > span.icon-X {
+      background-position: 0 0;
+    }
+
+    .share-pop .pop-shareApp > a > span.icon-FaceBook {
+      background-position: -60px 0;
+    }
+
+    .share-pop .pop-shareApp > a > span.icon-WhatsApp {
+      background-position: -120px 0;
+    }
+
+    .share-pop .pop-shareApp > a > span.icon-Email {
+      background-position: -180px 0;
+    }
+
+    .share-pop .pop-shareWebsite {
+      border: 1px solid #ccc;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      border-radius: 4px;
+      position: relative;
+    }
+
+    .share-pop .pop-shareWebsite input {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      text-indent: 12px;
+      color: #555;
+      font-size: 14px;
+      line-height: 40px;
+      border: none;
+    }
+
+    .share-pop .pop-shareWebsite .copy {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+      flex: 0 0 auto;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      border-radius: 4px;
+      padding-left: 4px;
+      margin-left: 4px;
+      margin-right: 4px;
+      cursor: pointer;
+      color: #3fbc6a;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 30px;
+    }
+
+    .share-pop .pop-shareWebsite .copy .icon-copy {
+      width: 14px;
+      height: 14px;
+      background-image: url(/static/images/icon-51t.svg);
+      background-repeat: no-repeat;
+      background-size: 180px auto;
+      margin: auto 6px auto 2px;
+      background-position: 0 -28px;
+    }
+
+    .share-pop .pop-shareWebsite .copy:active,
+    .share-pop .pop-shareWebsite .copy:hover {
+      background-color: rgba(63, 188, 106, 0.1);
+    }
+
+    .share-pop .pop-shareWebsite .success {
+      display: none;
+      position: absolute;
+      left: 50%;
+      top: -24px;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      background-color: #3fbc6a;
+      padding: 0 12px;
+      border-radius: 4px;
+      white-space: nowrap;
+      -webkit-box-shadow: 0 0 10px rgba(63, 188, 106, 0.2);
+      box-shadow: 0 0 10px rgba(63, 188, 106, 0.2);
+      color: #fff;
+      text-align: center;
+      font-size: 13px;
+      line-height: 30px;
+    }
+  </style>
   <body>
     <link rel="stylesheet" href="static/css/header.css" />
     <div class="nav">
@@ -181,7 +437,79 @@
               <a href="javascript:;" class="ios" style="display: none"><i></i> Download for iOS </a>
               <a href="javascript:;" class="pc" style="display: none"><i></i> </a>
               <a href="javascript:;" class="no" style="display: none"> No download yet </a>
+              <div class="share-item share-link">
+                <span class="icon-link"></span>
+                <div class="share-pop" style="display: none">
+                  <span class="pop-close"></span>
+                  <div class="pop-title">Share this game</div>
+                  <div class="pop-shareApp">
+                    <a href="javascript:shareToFacebook();"><span class="icon-FaceBook"></span>FaceBook</a>
+                    <a href="javascript:shareToX();"><span class="icon-X"></span>X</a>
+                    <a href="javascript:shareToWhatsapp();"><span class="icon-WhatsApp"></span>WhatsApp</a>
+                    <a href="mailto:;"><span class="icon-Email"></span>Email</a>
+                  </div>
+                  <div class="pop-shareWebsite">
+                    <input type="text" value="https://www.aiting.com/temple-run-2/com.imangi.templerun2" />
+                    <span class="copy">Copy<i class="icon-copy"></i></span>
+                    <span class="success" style="display: none">Link copied to clipboard</span>
+                  </div>
+                </div>
+              </div>
             </div>
+
+            <script>
+              function getMetaContentByName(name) {
+                var metaTag = document.querySelector(`meta[property='${name}']`);
+                return metaTag ? metaTag.getAttribute("content") : "";
+              }
+
+              function shareToX() {
+                var url = getMetaContentByName("og:url");
+                var text = getMetaContentByName("og:title");
+                var img = getMetaContentByName("og:image");
+                var twitterUrl = "https://twitter.com/intent/tweet?url=" + encodeURI(url) + "&via=40407&text=" + encodeURI(text) + "&media=" + encodeURI(img);
+                open(twitterUrl, "_blank");
+              }
+
+              function shareToFacebook() {
+                var url = getMetaContentByName("og:url");
+                var img = getMetaContentByName("og:image");
+                var facebookUrl = "https://www.facebook.com/sharer/sharer.php?u=" + encodeURI(url);
+                open(facebookUrl, "_blank");
+              }
+
+              function shareToWhatsapp() {
+                var url = getMetaContentByName("og:url");
+                var whatsappUrl = "https://api.whatsapp.com/send/?text=" + encodeURI(url) + "&type=custom_url";
+                open(whatsappUrl, "_blank");
+              }
+
+              $(document).ready(function () {
+                if ($(".share-item").length) {
+                  // share-link
+                  $(".share-link .icon-link").on("click", function () {
+                    $(this).siblings(".share-pop").show();
+                  });
+                  $(".share-link .pop-close").on("click", function () {
+                    $(this).parent().hide();
+                  });
+                  // copy
+                  $(".pop-shareWebsite").on("click", ".copy", function () {
+                    var copyText = $(this).siblings("input").val(),
+                      success = $(this).siblings(".success"),
+                      temp = $("<input>");
+                    $("body").append(temp);
+                    temp.val(copyText).select();
+                    document.execCommand("copy");
+                    temp.remove();
+                    success.fadeIn();
+                    setTimeout(function () {
+                      success.fadeOut();
+                    }, 1000);
+                  });
+                }
+              });
+            </script>
           </div>
           <div class="ewm fr">
             <div class="qrcode" id="qrcode" url="https://www.40407.com/en/games/88888"></div>
